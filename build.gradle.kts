@@ -43,8 +43,8 @@ micronaut {
     runtime("netty")
     testRuntime("junit5")
     processing {
-        incremental(true)
-        annotations("bootTestJava.*")
+        incremental(false)
+        annotations("bootTestJava.*", "org.springframework.boot.*")
     }
 }
 
